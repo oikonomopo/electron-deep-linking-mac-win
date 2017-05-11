@@ -58,14 +58,17 @@ app.on('activate', function () {
 
 // In this file you can include the rest of your app's specific main process
 // code. You can also put them in separate files and require them here.
-// The setAsDefaultProtocolClient only works on packaged versions of the application
 
+// The setAsDefaultProtocolClient only works on packaged versions of the application
 app.setAsDefaultProtocolClient('myApp')
+
 // Protocol handler for osx
 app.on('open-url', function (event, url) {
   event.preventDefault();
   log("open-url event: " + url)
 })
+
+// Log both at terminal and at browser
 function log(s) {
     console.log(s)
     if (mainWindow && mainWindow.webContents) {
