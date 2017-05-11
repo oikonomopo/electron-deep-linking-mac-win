@@ -1,20 +1,15 @@
 # electron-deep-linking-osx
 
-**Clone and run for a quick way to see electron-deep-linking-osx in action.**
 
 Open app and pass parameters with Deep-Linking using Electron (OSX).
+
+This app is registered as ```myapp://param```.
 For example, open Safari browser, enter ```myapp://param``` at address bar. Then 'electron-deep-linking-osx' app will start!
 
 *In first instance app can't read custom url protocol. If app is opened already, every custom url protocol is passed!
 
 
 This is based on the [Quick Start Guide](http://electron.atom.io/docs/tutorial/quick-start) within the Electron documentation, then followed [‘electron-builder’ quick-setup-guide](https://github.com/electron-userland/electron-builder#quick-setup-guide) to produce mac installer
-
-A basic Electron application needs just these files:
-
-- `package.json` - Points to the app's main file and lists its details and dependencies.
-- `main.js` - Starts the app and creates a browser window to render HTML. This is the app's **main process**.
-- `index.html` - A web page to render. This is the app's **renderer process**.
 
 
 ## To Use
