@@ -1,20 +1,18 @@
 {
-  "name": "electron-quick-start",
+  "name": "electron-deep-linking-osx",
   "version": "1.0.0",
-  "description": "A minimal Electron application",
+  "description": "A minimal Electron application with Deep Linking (OSX)",
   "main": "main.js",
   "scripts": {
     "start": "electron .",
     "pack": "build --dir",
     "dist": "build"
   },
-  "repository": "https://github.com/electron/electron-quick-start",
+  "repository": "https://github.com/oikonomopo/electron-deep-linking-osx",
   "keywords": [
     "Electron",
-    "quick",
-    "start",
-    "tutorial",
-    "demo"
+    "osx",
+    "deep-linking"
   ],
   "author": "GitHub",
   "license": "CC0-1.0",
