@@ -20,7 +20,7 @@ To clone and run this repository you'll need [Git](https://git-scm.com) and [Nod
 # Clone this repository
 git clone https://github.com/oikonomopo/electron-deep-linking-osx.git
 # Go into the repository
-cd electron-quick-start
+cd electron-deep-linking-osx
 # Install dependencies
 npm install
 # Run the app
