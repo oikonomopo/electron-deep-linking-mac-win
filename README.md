@@ -29,7 +29,7 @@ npm start
 # Produce installer
 npm run dist
 ```
-After running the installer (myApp/dist/electron-quick-start-1.0.0.dmg), you can try to open myApp with Deep-Linking, entering myapp://param at Safari address-bar.
+After running the installer (electron-deep-linking-osx/dist/electron-quick-start-1.0.0.dmg), you can try to open myApp with Deep-Linking, entering myapp://param at Safari address-bar.
 
 If app is opened, it activates and you can see the log open-url event: myapp://param!
 
