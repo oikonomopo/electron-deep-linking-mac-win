@@ -3,6 +3,8 @@
 
 Open app and pass parameters with Deep-Linking using Electron (OSX).
 
+![](https://github.com/oikonomopo/electron-deep-linking-osx/blob/master/electron-deeplinking-osx-example.gif)
+
 This app is registered as ```myapp://```.
 
 For example, open Safari browser, enter ```myapp://param``` at address bar. Then 'electron-deep-linking-osx' app will start!
