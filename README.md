@@ -11,7 +11,10 @@ This is based on the [Quick Start Guide](http://electron.atom.io/docs/tutorial/q
 
 ## Issue
 
-In first instance app can't read custom url protocol. If app is opened already, every custom url protocol is passed! (Investigating!)
+In first instance app can't read custom url protocol. If app is opened already, every custom url protocol is passed! 
+// TODO (Investigating!)
+When app is closed and have a call with custom-url-protocol, open app and get the custom-url-protocol!
+Any kind of help for this issue is appreciated!
 
 ## To Use
 
@@ -32,10 +35,6 @@ npm run dist
 After running the installer (electron-deep-linking-osx/dist/electron-quick-start-1.0.0.dmg), you can try to open myApp with Deep-Linking, entering myapp://param at Safari address-bar.
 
 If app is opened, it activates and you can see at dev tools console the log open-url event: ```myapp://param```!
-
-:bulb: 
-// TODO When app is closed and have a call with custom-url-protocol, open app and get the custom-url-protocol!
-Any kind of help for this issue is appreciated!
 
 ## Resources for Further investigation
 
