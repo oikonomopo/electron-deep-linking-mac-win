@@ -12,6 +12,7 @@ This is based on the [Quick Start Guide](http://electron.atom.io/docs/tutorial/q
 ## Issue
 
 In first instance app can't read custom url protocol. If app is opened already, every custom url protocol is passed! 
+
 // TODO (Investigating!)
 When app is closed and have a call with custom-url-protocol, open app and get the custom-url-protocol!
 Any kind of help for this issue is appreciated!
