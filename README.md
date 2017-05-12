@@ -46,4 +46,4 @@ When app is closed and have a call with custom-url-protocol, open app and log th
 
 ## License
 
-[CC0 1.0 (Public Domain)](LICENSE.md)
+[GNU GPLv3](LICENSE.md)
