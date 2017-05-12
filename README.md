@@ -35,7 +35,7 @@ After running the installer (electron-deep-linking-osx/dist/electron-quick-start
 
 If app is opened, it activates and you can see at dev tools console the log open-url event: ```myapp://param```!
 
-// TODO When app is closed and have a call with custom-url-protocol, open app and get the custom-url-protocol!
+:bulb: // TODO When app is closed and have a call with custom-url-protocol, open app and get the custom-url-protocol!
 
 ## Resources for Further investigation
 
