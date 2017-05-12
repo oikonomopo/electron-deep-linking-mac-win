@@ -7,11 +7,11 @@ Open app and pass parameters with Deep-Linking using Electron (OSX).
 
 This app is registered as ```myapp://```. For example, open Safari browser, enter ```myapp://param``` at address bar. Then 'electron-deep-linking-osx' app will start!
 
-* In first instance app can't read custom url protocol. If app is opened already, every custom url protocol is passed! (Investigating!)
-
-
 This is based on the [Quick Start Guide](http://electron.atom.io/docs/tutorial/quick-start) within the Electron documentation, then followed [‘electron-builder’ quick-setup-guide](https://github.com/electron-userland/electron-builder#quick-setup-guide) to produce mac installer
 
+## Issue
+
+In first instance app can't read custom url protocol. If app is opened already, every custom url protocol is passed! (Investigating!)
 
 ## To Use
 
