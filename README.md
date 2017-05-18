@@ -31,7 +31,7 @@ npm start
 # Produce installer
 npm run dist
 ```
-After running the installer (electron-deep-linking-osx/dist/electron-quick-start-1.0.0.dmg), you can try to open 'electron-deep-linking-osx' app with Deep-Linking, by entering ```myapp://param``` at Safari address-bar.
+After running the installer (electron-deep-linking-osx/dist/electron-quick-start-1.0.0.dmg), you can try to open 'electron-deep-linking-osx' app with deep linking, by entering ```myapp://param``` at Safari address-bar.
 
 ## License
 
