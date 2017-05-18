@@ -33,9 +33,6 @@ npm run dist
 ```
 After running the installer (electron-deep-linking-osx/dist/electron-quick-start-1.0.0.dmg), you can try to open myApp with Deep-Linking, entering myapp://param at Safari address-bar.
 
-If app is opened, it activates and you can see at dev tools console the log open-url event: ```myapp://param```!
-If app is closed, it is starts the app! (Without custom-protocol, yet! Hope to find solution!)
-
 ## License
 
 [GNU GPLv3](LICENSE.md)
