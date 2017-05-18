@@ -11,11 +11,14 @@ This is based on the [Quick Start Guide](http://electron.atom.io/docs/tutorial/q
 
 ## Issue
 
-In first instance app can't read custom url protocol. If app is opened already, every custom url protocol is passed! 
+In first instance, app shows dialog with url but can't log it to dev console. If app is opened already, every url is shown both at dialog module and at dev console! 
 
 // TODO (Investigating!)
-When app is closed and have a call with custom-url-protocol, open app and get the custom-url-protocol!
-Any kind of help for this issue is appreciated!
+After running the installer (electron-deep-linking-osx/dist/electron-quick-start-1.0.0.dmg), i try to open electron-deep-linking-os app with Deep-Linking, entering myapp://param at Safari address bar.
+If app is opened, it activates and i can see the dialog with the url and the log open-url event: myapp://param!
+If app is closed, it opens, dialog with the url is shown but isn't logged to dev console!
+Why with dialog module url is showing properly, but isn't logged to dev console? How to log it?
+
 
 ## To Use
 
