@@ -38,14 +38,6 @@ After running the installer (electron-deep-linking-osx/dist/electron-quick-start
 If app is opened, it activates and you can see at dev tools console the log open-url event: ```myapp://param```!
 If app is closed, it is starts the app! (Without custom-protocol, yet! Hope to find solution!)
 
-## Resources for Further investigation
-
-- [http://stackoverflow.com/questions/43912119/open-app-and-pass-parameters-with-deep-linking-using-electron-osx)
-- [http://discuss.atom.io/t/custom-protocol-and-closed-app/37030)
-- [http://github.com/masahirompp/electron-open-url-sample)
-- [http://github.com/electron/electron/issues/3847)
-
-
 ## License
 
 [GNU GPLv3](LICENSE.md)
