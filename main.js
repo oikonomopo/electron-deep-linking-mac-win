@@ -3,9 +3,12 @@ const electron = require('electron')
 const app = electron.app
 // Module to create native browser window.
 const BrowserWindow = electron.BrowserWindow
-
+// Module with utilities for working with file and directory paths.
 const path = require('path')
+// Module with utilities for URL resolution and parsing.
 const url = require('url')
+// Module to display native system dialogs for opening and saving files, alerting, etc.
+const dialog = electron.dialog
 
 // Keep a global reference of the window object, if you don't, the window will
 // be closed automatically when the JavaScript object is garbage collected.
@@ -66,6 +69,8 @@ app.setAsDefaultProtocolClient('myApp')
 app.on('open-url', function (event, url) {
   event.preventDefault();
   log("open-url event: " + url)
+  
+  dialog.showErrorBox('open-url', `You arrived from: ${url}`)
 })
 
 // Log both at terminal and at browser
