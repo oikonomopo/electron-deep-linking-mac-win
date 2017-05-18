@@ -1,7 +1,7 @@
 # electron-deep-linking-osx
 
 
-Open app and pass parameters with Deep-Linking using Electron (macOS).
+Open app and pass parameters with deep linking using Electron (macOS).
 
 ![](https://github.com/oikonomopo/electron-deep-linking-osx/blob/master/electron-deeplinking-osx-example.gif)
 
