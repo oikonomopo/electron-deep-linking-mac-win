@@ -1,19 +1,13 @@
 # electron-deep-linking-osx
 
 
-Open app and pass parameters with deep linking using Electron (macOS).
+Open app and pass parameters with deep linking using Electron (macOS/win32).
 
 ![](https://github.com/oikonomopo/electron-deep-linking-osx/blob/master/electron-deeplinking-osx-example.gif)
 
 This app is registered as ```myapp://```. For example, open Safari browser, enter ```myapp://param``` at address bar. Then 'electron-deep-linking-osx' app will start!
 
-This is based on the [Quick Start Guide](http://electron.atom.io/docs/tutorial/quick-start) within the Electron documentation, then followed [‘electron-builder’ quick-setup-guide](https://github.com/electron-userland/electron-builder#quick-setup-guide) to produce mac installer
-
-## Issue
-
-In first instance, app shows dialog with url but can't log it to dev console. If app is opened already, every url is shown both at dialog module and at dev console! 
-
-// TODO Investigate
+This is based on the [Quick Start Guide](http://electron.atom.io/docs/tutorial/quick-start) within the Electron documentation, then followed [‘electron-builder’ quick-setup-guide](https://github.com/electron-userland/electron-builder#quick-setup-guide) to produce macOS/win32 installer
 
 ## To Use
 
