@@ -5,7 +5,7 @@ Open app and pass parameters with deep linking using Electron (macOS/win32).
 
 ![](https://github.com/oikonomopo/electron-deep-linking-osx/blob/master/electron-deeplinking-osx-example.gif)
 
-This app is registered as ```myapp://```. For example, open Safari browser, enter ```myapp://param``` at address bar. Then 'electron-deep-linking-osx' app will start!
+This app is registered as ```myapp://```. For example, open Safari browser, enter ```myapp://param``` at address bar. Then 'electron-deep-linking-mac-win' app will start!
 
 This is based on the [Quick Start Guide](http://electron.atom.io/docs/tutorial/quick-start) within the Electron documentation, then followed [‘electron-builder’ quick-setup-guide](https://github.com/electron-userland/electron-builder#quick-setup-guide) to produce macOS/win32 installer
 
@@ -15,9 +15,9 @@ To clone and run this repository you'll need [Git](https://git-scm.com) and [Nod
 
 ```bash
 # Clone this repository
-git clone https://github.com/oikonomopo/electron-deep-linking-osx.git
+git clone https://github.com/oikonomopo/electron-deep-linking-mac-win.git
 # Go into the repository
-cd electron-deep-linking-osx
+cd electron-deep-linking-mac-win
 # Install dependencies
 npm install
 # Run the app
@@ -25,7 +25,7 @@ npm start
 # Produce installer
 npm run dist
 ```
-After running the installer (at electron-deep-linking-osx/dist/), you can try to open 'electron-deep-linking-osx' app with deep linking, by entering ```myapp://param``` at Safari address-bar.
+After running the installer (at electron-deep-linking-mac-win/dist/), you can try to open 'electron-deep-linking-mac-win' app with deep linking, by entering ```myapp://param``` at Safari address-bar.
 
 ## License
 
