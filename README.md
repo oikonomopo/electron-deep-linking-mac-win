@@ -1,4 +1,4 @@
-# electron-deep-linking-osx
+# electron-deep-linking-macOS-win32
 
 
 Open app and pass parameters with deep linking using Electron (macOS/win32).
