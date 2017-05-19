@@ -1,7 +1,7 @@
 # electron-deep-linking-osx
 
 
-Open app and pass parameters with Deep-Linking using Electron (OSX).
+Open app and pass parameters with deep linking using Electron (macOS).
 
 ![](https://github.com/oikonomopo/electron-deep-linking-osx/blob/master/electron-deeplinking-osx-example.gif)
 
@@ -31,7 +31,7 @@ npm start
 # Produce installer
 npm run dist
 ```
-After running the installer (electron-deep-linking-osx/dist/electron-quick-start-1.0.0.dmg), you can try to open myApp with Deep-Linking, entering myapp://param at Safari address-bar.
+After running the installer (electron-deep-linking-osx/dist/electron-quick-start-1.0.0.dmg), you can try to open 'electron-deep-linking-osx' app with deep linking, by entering ```myapp://param``` at Safari address-bar.
 
 ## License
 
