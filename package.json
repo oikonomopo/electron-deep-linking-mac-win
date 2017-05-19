@@ -1,7 +1,7 @@
 {
-  "name": "electron-deep-linking-osx",
-  "version": "1.0.0",
-  "description": "A minimal Electron application with Deep Linking (OSX)",
+  "name": "electron-deeplinking-macos-win32",
+  "version": "0.0.1",
+  "description": "A minimal Electron application with deep inking (macOS/win32)",
   "main": "main.js",
   "scripts": {
     "start": "electron .",
@@ -11,23 +11,26 @@
   "repository": "https://github.com/oikonomopo/electron-deep-linking-osx",
   "keywords": [
     "Electron",
-    "osx",
-    "deep-linking"
+    "macOS",
+    "win32",
+    "deep linking"
   ],
-  "author": "GitHub",
+  "author": "oikonomopo",
   "license": "CC0-1.0",
   "devDependencies": {
     "electron": "1.6.6",
     "electron-builder": "17.1.2"
   },
   "build": {
-    "appId": "your.id",
-    "mac": {
-      "category": "your.app.category.type"
-    },
+    "appId": "oikonomopo.electron-deeplinking-macos-win32",
     "protocols": {
-      "name": "myApp",
-      "schemes": ["myApp"]
+      "name": "electron-deep-linking",
+      "schemes": ["myapp"]
+    },
+    "mac": {
+      "category": "public.app-category.Reference"
+    },
+    "win": {
     }
   }
 }

@@ -1,18 +1,37 @@
-const electron = require('electron')
-// Module to control application life.
-const app = electron.app
-// Module to create native browser window.
-const BrowserWindow = electron.BrowserWindow
+const {app, BrowserWindow} = require('electron')
 // Module with utilities for working with file and directory paths.
 const path = require('path')
 // Module with utilities for URL resolution and parsing.
 const url = require('url')
-// Module to display native system dialogs for opening and saving files, alerting, etc.
-const dialog = electron.dialog
 
 // Keep a global reference of the window object, if you don't, the window will
 // be closed automatically when the JavaScript object is garbage collected.
 let mainWindow
+
+// Deep linked url
+let deeplinkingUrl
+
+// Force Single Instance Application
+const shouldQuit = app.makeSingleInstance((argv, workingDirectory) => {
+  // Someone tried to run a second instance, we should focus our window.
+
+  // Protocol handler for win32
+  // argv: An array of the second instance’s (command line / deep linked) arguments
+  if (process.platform == 'win32') {
+    // Keep only command line / deep linked arguments
+    deeplinkingUrl = argv.slice(1)
+  }
+  logEverywhere("app.makeSingleInstance# " + deeplinkingUrl)
+
+  if (win) {
+    if (win.isMinimized()) win.restore()
+        win.focus()
+  }
+})
+if (shouldQuit) {
+    app.quit()
+    return
+}
 
 function createWindow () {
   // Create the browser window.
@@ -27,6 +46,13 @@ function createWindow () {
 
   // Open the DevTools.
   mainWindow.webContents.openDevTools()
+
+  // Protocol handler for win32
+  if (process.platform == 'win32') {
+    // Keep only command line / deep linked arguments
+    deeplinkingUrl = process.argv.slice(1)
+  }
+  logEverywhere("createWindow# " + deeplinkingUrl)
 
   // Emitted when the window is closed.
   mainWindow.on('closed', function () {
@@ -59,22 +85,18 @@ app.on('activate', function () {
   }
 })
 
-// In this file you can include the rest of your app's specific main process
-// code. You can also put them in separate files and require them here.
-
-// The setAsDefaultProtocolClient only works on packaged versions of the application
-app.setAsDefaultProtocolClient('myApp')
+// Define custom protocol handler. Deep linking works on packaged versions of the application!
+app.setAsDefaultProtocolClient('myapp')
 
 // Protocol handler for osx
 app.on('open-url', function (event, url) {
-  event.preventDefault();
-  log("open-url event: " + url)
-  
-  dialog.showErrorBox('open-url', `You arrived from: ${url}`)
+  event.preventDefault()
+  deeplinkingUrl = url
+  logEverywhere("open-url# " + deeplinkingUrl)
 })
 
-// Log both at terminal and at browser
-function log(s) {
+// Log both at dev console and at running node console instance
+function logEverywhere(s) {
     console.log(s)
     if (mainWindow && mainWindow.webContents) {
         mainWindow.webContents.executeJavaScript(`console.log("${s}")`)
