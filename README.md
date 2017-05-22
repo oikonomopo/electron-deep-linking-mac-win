@@ -1,4 +1,5 @@
 # electron-deep-linking-macOS-win32
+[![codebeat badge](https://codebeat.co/badges/62d56692-2100-4dee-ad02-80fdb2fd3838)](https://codebeat.co/projects/github-com-oikonomopo-electron-deep-linking-mac-win-master)
 
 
 Open app and pass parameters with deep linking using Electron (macOS/win32).
