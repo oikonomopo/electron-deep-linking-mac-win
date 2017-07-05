@@ -23,9 +23,9 @@ const shouldQuit = app.makeSingleInstance((argv, workingDirectory) => {
   }
   logEverywhere("app.makeSingleInstance# " + deeplinkingUrl)
 
-  if (win) {
-    if (win.isMinimized()) win.restore()
-        win.focus()
+  if (mainWindow) {
+    if (mainWindow.isMinimized()) mainWindow.restore()
+        mainWindow.focus()
   }
 })
 if (shouldQuit) {
