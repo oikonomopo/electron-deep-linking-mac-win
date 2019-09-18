@@ -18,19 +18,20 @@
   "author": "oikonomopo",
   "license": "CC0-1.0",
   "devDependencies": {
-    "electron": "1.6.16",
-    "electron-builder": "17.1.2"
+    "electron": "^5.0.1",
+    "electron-builder": "^20.40.2"
   },
   "build": {
     "appId": "oikonomopo.electron-deeplinking-macos-win32",
     "protocols": {
       "name": "electron-deep-linking",
-      "schemes": ["myapp"]
+      "schemes": [
+        "myapp"
+      ]
     },
     "mac": {
       "category": "public.app-category.Reference"
     },
-    "win": {
-    }
+    "win": {}
   }
 }
