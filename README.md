@@ -28,7 +28,7 @@ npm start
 # Produce installer
 npm run dist
 ```
-After running the installer (at electron-deep-linking-mac-win/dist/), you can try to open 'electron-deep-linking-mac-win' app with deep linking, by entering ```myapp://param``` at Safari address-bar. At chrome it will work by embedding the custom url in a link: f.e. ```<a href="myapp://param">Open app</a>```
+After running the installer (at electron-deep-linking-mac-win/dist/), you can try to open 'electron-deep-linking-mac-win' app with deep linking, by entering ```myapp://param``` at Safari address-bar. At chrome it will work by embedding the custom url in a link: f.e. <a href="myapp://param">Open app</a>
 
 ## License
 
