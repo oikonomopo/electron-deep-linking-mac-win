@@ -1,7 +1,7 @@
 # electron-deep-linking-macOS-win32
 [![codebeat badge](https://codebeat.co/badges/62d56692-2100-4dee-ad02-80fdb2fd3838)](https://codebeat.co/projects/github-com-oikonomopo-electron-deep-linking-mac-win-master)
 
-Deeplinking demo for electron app (macOS/win32)
+Deep-linking demo for electron app (macOS/win32)
 
 ## Overview
 
